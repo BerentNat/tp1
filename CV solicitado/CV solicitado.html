@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículum Vitae</title>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+    .imagen-container {
+      text-align: center; /* Centra el contenido horizontalmente */
+      border: 2px solid #333; /* Agrega un borde de 2px sólido de color gris oscuro */
+      padding: 10px; /* Agrega un espacio alrededor de la imagen */
+      background-color: #000; /* Agrega un color de fondo dentro del borde */
+    }
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'personal objective'
+        'education work'
+       ;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+.photo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 200px; /* Altura de la sección de la foto */
+    border: 1px solid black;
+}
+
+.personal-data, .objective, .work-history, .education, .hobbies {
+    border: 1px solid black;
+    padding: 20px;
+
+}
+
+.personal-data {
+    grid-area: personal;
+    width: 197%; /* Ancho del 100% de su contenedor */
+    height: 300px; /* Altura de la franja */
+}
+
+.objective {
+    grid-area: objective;
+}
+
+.work-history {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.hobbies {
+    grid-area: hobbies;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="photo">
+                <img src="perfil.jpg" alt="perfil" style="width: 250px; height: 185px;">
+            </div>
+        </div>
+        
+
+    <div class="personal-data">
+        <h2>Samanta Lazarotto</h2>
+        <h3>Datos personales:</h3>
+        <p>Fecha de nacimiento: 15 de mayo de 1990</p>
+        <p>Dirección: Calle Primavera 123, Ciudad , País </p>
+        <h3>Contacto:</h3>
+        <p>Correo electrónico: lazarotto@example.com</p>
+        <p>Teléfono: +1234567890   </p>
+        <p>LinkedIn: linkedin.com/in/sam-lazarotto </p>
+      
+        
+    </div>
+    <div class="work-history">
+        <h2>Antecedentes laborales:</h2>
+        <p>Analista de Sistemas, TechSolutions SA, Agosto 2016 - Presente   </p>
+       
+        <ul>
+            <li>Responsable de análisis de requerimientos, diseño e implementación de soluciones tecnológicas para mejorar la eficiencia operativa y la experiencia del usuario</li>
+            <li>Colaboración estrecha con equipos interdisciplinarios para identificar y resolver problemas técnicos. </li>
+            <li>Participación en proyectos de desarrollo de software, desde la etapa de planificación hasta la implementación y el soporte post-implementación.</li>
+        </ul>
+        <h2>Pasatiempo:</h2>
+        <p>En mi tiempo libre, disfruto explorar nuevas tecnologías y participar en comunidades en línea relacionadas con la programación. También me apasiona la fotografía y la escritura creativa.</p>
+        
+    </div>
+    <div class="education">
+        <h2>Objetivos:</h2>
+            <p>Busco aplicar mis habilidades analíticas y técnicas en el campo de sistemas para contribuir al desarrollo y optimización de soluciones tecnológicas innovadoras. Me comprometo a trabajar en equipo y seguir aprendiendo para alcanzar mis metas profesionales y contribuir al éxito de la organización.</p>
+        <h2>Estudios realizados:</h2>
+            <ul>
+                <li>Ingeniería en Sistemas de Información, Universidad Tecnológica de Ciudad Ficticia, 2010 - 2014</li>
+                <li>Curso de Especialización en Desarrollo de Software, Instituto de Tecnología Avanzada, 2015 - 2016</li>
+            </ul>
+    </div>
+   
+</div>
+</body>
+</html>
+
